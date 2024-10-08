@@ -4,7 +4,7 @@ import plotly.express as px
 import requests
 
 from ydata_profiling import ProfileReport
-from streamlit_pandas_profiling import st_profile_report
+#from streamlit_pandas_profiling import st_profile_report
 
 st.title('Trees')
 st.write(
@@ -33,4 +33,4 @@ if st.button("Save data and overwrite"):
     st.write("Saved!")
 
 profile = ProfileReport(trees_df, explorative=True)
-st_profile_report(profile)
+#st_profile_report(profile)
